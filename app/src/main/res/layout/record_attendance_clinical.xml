@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.example.android_project.AttendanceMenu">
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/clinicalAttachment"
+        android:textSize="20sp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/weekSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/consultantSig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/consultantSig"
+                />
+
+            <EditText
+                android:id="@+id/consultComments"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight=".95"
+                android:gravity="top|left"
+                android:hint="@string/comments"
+                android:inputType="textMultiLine"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/recordAttendanceClinical"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Submit"
+            />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

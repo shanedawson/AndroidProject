@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/attendanceHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/attendanceHeading"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/teachingProgram"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <Button
+        android:id="@+id/clinicalAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clinicalAttachment"
+
+
+        />
+
+
+</LinearLayout>
